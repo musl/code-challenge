@@ -1,6 +1,8 @@
 package main
 
 import (
+	"io"
+	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -20,7 +22,9 @@ const (
 )
 
 func TestTopNTriples(t *testing.T) {
-	ary := TopNTriples(TestText)
+	reader := io.Reader(strings.NewReader(TestText))
+	triples, err := TopNTriples(100, reader)
 
-	assert.Equal(t, 10, len(ary))
+	assert.Nil(t, err)
+	assert.Equal(t, 10, len(triples))
 }
