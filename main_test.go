@@ -19,7 +19,7 @@ const (
                 of a light metal, such as aluminium or thinly rolled
                 stainless steel. Colanders are also made of plastic,
                 silicone, ceramic, and enamelware I like turtles i like
-				turtles I Like Turtles I LIKE TURTLES I like Turtles`
+                turtles I Like Turtles I LIKE TURTLES I like Turtles`
 )
 
 func TestTopNTriples(t *testing.T) {

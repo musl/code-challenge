@@ -11,13 +11,13 @@ import (
 	"strings"
 )
 
-// Triple is
+// Triple holds a value and the number of times it occurred in a stream.
 type Triple struct {
 	Value string
 	Count int
 }
 
-// TripleHeap is a reverse-ordered heap.
+// TripleHeap is a reverse-ordered heap of Triples.
 type TripleHeap []Triple
 
 // Len returns the number of elements in a heap.
